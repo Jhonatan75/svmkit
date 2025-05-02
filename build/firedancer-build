@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ $# -ne 1 ]]; then
+	echo "$0 tag"
+	exit 1
+fi
+
+TAG=$1
+shift
+
+set -x
+
+git fetch origin
+git checkout "$TAG"
+make clean
+git clean -f -d -x
+svmkit build fd
+mv *.deb ../build/.
